@@ -57,7 +57,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird w3-grey">
       <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-top">
-        <h3 class="w3-text-grey"><font size="5">Research Assistant</font></h3>
+        <h2 class="w3-text-grey">Research Assistant</h2>
         <div class="w3-container">
             <div class="w3-content">
                 <div class="fw-text">
@@ -68,41 +68,87 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h3 class="w3-text-grey"><font size="5">Senior Design Project</font></h3>
+          <h2 class="w3-text-grey">Classroom Technician</h2>
+          <div>
+            <p>
+              As a classroom technician I was responsible for ensuring all computers and computer equipment was functioning properly in the college of Fine Arts. At times this required getting cameras and projectors to properly communicate with the computer system, at other times I had to trouble shoot connectivity issues with individual laptops.
+            </p>
+            <p>
+              In addition to keeping the classrooms operating smoothly I also spent time at the audio/visual where I checked-in and check-out equipment to students, check functionality upon return and made sure inventory was up to date.
+            </p>
+          </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey">Senior Design Project</h2>
             <div class="w3-container">
                 <div class="fw-text"><!-- ParagraphBodyStart -->
                   <p align="center">
                     <script type="text/javascript" src="https://members.webs.com/JS/viewYouTube.jsp?ID=PmmUq1F5x24&width=425&height=350"></script>
                   </p>
+                
+                  <h3>WHAT IS S.A.R.A.?</h3>
+                  <table>
+                    <tr>
+                      <td width="80%" valign="top">
+                          The <b>S</b>emi <b>A</b>utonomous <b>R</b>obotic <b>A</b>ssistant (SARA) is a robotic assistant proof of concept prototype specifically created to work in a library setting. SARA was designed and created during the spring 2009 semester at the University of Texas at Austin as a senior design project. The main concept is a robot that tracks and follows a user in a library while assisting the user in carrying books. This prototype was designed to carry up to 20 pounds of books while maintaining contact with the user. To control the robot, the user simply uses a remote that either switches the robot from automatic to manual mode. In manual mode, the user controls the robot via push button commands to navigate to the desired location. In automatic mode. the robot will follow the user with its vision tracking system while avoiding obstacles. During operation, a remote computer monitors SARA&#8217;s status and outputs speed data to the GUI.
+                      </td>
+                      <td width="20%" valign="top">
+                          <img style="margin: 8px" src="images/SARAFinal.jpg" border="0" />
+                      </td>
+                    </tr>
+                  </table>
+                  <h3>HARDWARE</h3>
+                  <table>
+                    <tr>
+                      <td width="50%" valign="top">
+                          <p align="center">
+                              <img style="margin: 8px" width="95%" src="images/Prototype.jpg" border="0" />
+                          </p>
+                      </td>
+                      <td width="50%" valign="top">
+                          The only pre-assembled component that was purchased for the robot was the H-bridge controller which allowed the 9S12 to send commands to the DC motors. All hardware components were assembled and configured by the group.
+                          <p align="center">
+                              <img style="margin: 8px" width ="40%" src="images/frame1.jpg" border="0" />
+                              <img style="margin: 8px" width ="40%" src="images/sensor1Test.jpg" border="0" />
+                            </p>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                  <h3>SOFTWARE</h3>
                   <p>
-                    <b>WHAT IS S.A.R.A.?</b><br />The <b>S</b>emi <b>A</b>utonomous <b>R</b>obotic <b>A</b>ssistant (SARA) is a robotic assistant proof of concept prototype specifically created to work in a library setting. SARA was designed and created during the spring 2009 semester at the University of Texas at Austin as a senior design project. The main concept is a robot that tracks and follows a user in a library while assisting the user in carrying books. This prototype was designed to carry up to 20 pounds of books while maintaining contact with the user. To control the robot, the user simply uses a remote that either switches the robot from automatic to manual mode. In manual mode, the user controls the robot via push button commands to navigate to the desired location. In automatic mode. the robot will follow the user with its vision tracking system while avoiding obstacles.&#160; During operation, a remote computer monitors SARA&#8217;s status and outputs speed data to the GUI .<br />&#160;
+                    The main robot controller is the 9S12C32 that is used in the embedded systems courses here at the University of Texas.&#160; Because of our group&#8217;s familiarity with this device along with the many code examples provided by Dr. Valvano, this portion of the project was fairly straightforward. The microcontroller communicates with the onboard laptop that acts as the main driver of the robot.&#160; We used OpenCV, which is a library of functions pertaining to real-time robot vision, to implement SARA&#8217;s object tracking system.&#160; The software uses image size, color, and position to actively follow a selected target.&#160; The underlying theme behind our algorithm is to move the robot in order for the selected object to remain in the center of the viewing window.&#160; This method is better explained below in the algorithm flowchart.
                   </p>
-                  <P align="right">
-                      <img style="margin: 8px" src="images/SARAFinal.jpg" border="0" />
-                  </P>
-                  <p>
-                    <br /><b>HARDWARE</b><br />The only pre-assembled component that was purchased for the robot was the H-bridge controller which allowed the 9S12 to send commands to the DC motors. All hardware components were assembled and configured by the group.
+                  <p align="cetner">
+                    <img style="margin: 8px" width ="45%" src="images/BlockBoard.jpg" border="0" />
+                    <img style="margin: 8px" width ="45%" src="images/SonarTest1.JPG" border="0" />
                   </p>
-                  <p align="center">
-                      <img style="margin: 8px" width ="80%" src="images/Prototype.jpg" border="0" />
-                    <p align="center">
-                      <img style="margin: 8px" width ="40%" src="images/frame1.jpg" border="0" />
-                      <img style="margin: 8px" width ="40%" src="images/sensor1Test.jpg" border="0" />
-                    </p>
-                    </p>
+                  <h3>FUTURE USE</h3>
                   <p>
-                    <b>SOFTWARE</b><br />The main robot controller is the 9S12C32 that is used in the embedded systems courses here at the University of Texas.&#160; Because of our group&#8217;s familiarity with this device along with the many code examples provided by Dr. Valvano, this portion of the project was fairly straightforward. The microcontroller communicates with the onboard laptop that acts as the main driver of the robot.&#160; We used OpenCV, which is a library of functions pertaining to real-time robot vision, to implement SARA&#8217;s object tracking system.&#160; The software uses image size, color, and position to actively follow a selected target.&#160; The underlying theme behind our algorithm is to move the robot in order for the selected object to remain in the center of the viewing window.&#160; This method is better explained below in the algorithm flowchart.
+                    Our system could easily facilitate the addition of several robotic assistants with the aid of our remote monitoring station.&#160; We have a system in place to track robot and user in a given environment, which could be implemented for multiple robots both for tracking purposes as well as a remote command terminal. When the robots are not assisting&#160; clients they could be sent on various tasks depending on the features added to the base (such as a scanner, robotic arm, or coffee machine).
+                  </p>
+                  <h3>SPECIFICATIONS</h3>
+                  <p>
+                    <b>Dimensions:</b> 18&#8221;X18&#8221;X33&#8221;
+                    <br /><b>Weight:</b> 30lb
+                    <br /><b>Carrying capacity:</b> 20lb
+                    <br /><b>Running time:</b> 2hrs
+                    <br /><br /><b>Motors</b>
+                    <br />24 Volt DC
+                    <br />Power Consumption: 24.7W
+                    <br />Gearing Ratio:&#160; 24:1
+                    <br />Rated Speed: 252 rpm
+                    <br />Max Torque: 10 kg-cm 
+                    <br />Max Current: 2.3 A
+                    <br /><br /><b>Batteries</b>: 12 V,&#160;7.0 A-h lead acid
                   </p>
                   <p>
-                    <b>FUTURE USE</b><br />Our system could easily facilitate the addition of several robotic assistants with the aid of our remote monitoring station.&#160; We have a system in place to track robot and user in a given environment, which could be implemented for multiple robots both for tracking purposes as well as a remote command terminal. When the robots are not assisting&#160; clients they could be sent on various tasks depending on the features added to the base (such as a scanner, robotic arm, or coffee machine).
+                    <b>Team members:</b> Robert Pound, Howard Bishop, Logan Rogers, Sean Horton, Dennis Yao
                   </p>
-                 
-                  <p>
-                    <br /><b>SPECIFICATIONS</b><br />Dimensions: 18&#8221;X18&#8221;X33&#8221;<br />Weight: 30lb<br />Carrying capacity: 20lb<br />Running time: 2hrs<br /><br /><b>MOTORS</b><br />24 Volt DC<br />Power Consumption: 24.7W<br />Gearing Ratio:&#160; 24:1<br />Rated Speed: 252 rpm<br />Max Torque: 10 kg-cm <br />Max Current: 2.3 A<br /><br /><b>BATTERIES</b>: 12 V,&#160;7.0 A-h lead acid</p><p><b>TEAM MEMBERS:</b> Robert Pound, Howard Bishop, Logan Rogers, Sean Horton, Dennis Yao
-                   </p>
                 </div>   
             </div>
-        </div>
+   
       </div>
 
     <!-- End Right Column -->
